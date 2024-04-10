@@ -14,14 +14,14 @@ with open('napisy.txt', 'r') as pliczek:
         parzyste += 1
         print('Jest tyle parzystych napisów: ', parzyste, '\n')
 
-    if linia.count('0') == linia.count('1'):
+    if linia.find('0') == linia.find('1'):
         tylesamo += 1
         print('Jest tyle wyrazów mających tyle samo jedynek i zer:', tylesamo, '\n')
 
-    if ciag == linia.count('0'):
+    if ciag == linia.find('0'):
         iloscZer = 1
         print('Jest tyle wyrazów mających zera:', iloscZer, '\n')
-    elif ciag == linia.count('1'):
+    elif ciag == linia.find('1'):
         iloscJedynek += 1
         print('Jest tyle wyrazów mających jedynki', iloscJedynek, '\n')
 
